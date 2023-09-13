@@ -5,7 +5,7 @@ async function main() {
 
     console.log("Deploying Contract at", owner.address);
 
-    const token = await ethers.deployContract("Lmao");
+    const token = await ethers.deployContract("Lmao", ["0x3D7a4E450B324E656E0F79fC4aFb5FEd72Bb5f68"]);
 
     await token.waitForDeployment();
 
